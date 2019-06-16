@@ -15,7 +15,7 @@ Can be hosted separately and referenced at runtime in Envelope app.
 Current status:
 - :heavy_check_mark: Angular 8
 - :heavy_check_mark: Lazy loading
-- :x: Ivy support
+- :heavy_check_mark: Ivy support
 - :x: Angular router fully working
 
 ---
