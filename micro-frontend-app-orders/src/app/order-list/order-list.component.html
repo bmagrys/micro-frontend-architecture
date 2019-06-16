@@ -1,0 +1,18 @@
+<table class="table table-striped clickable-rows">
+  <thead>
+  <tr>
+    <th scope="col">Date</th>
+    <th scope="col">ID</th>
+    <th scope="col">Status</th>
+    <th scope="col">Amount</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let order of orders" routerLink="{{order.id}}">
+    <td>{{order.date}}</td>
+    <th scope="row">{{order.id}}1</th>
+    <td>{{order.status}}</td>
+    <td>{{order.amount}}</td>
+  </tr>
+  </tbody>
+</table>
