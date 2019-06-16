@@ -41,9 +41,11 @@ They are listed in concrete projects.
 ---
 #### All technologies and tools used across projects
 
-- [Angular 8](https://angular.io/) with use of [Angular Elements](https://angular.io/guide/elements)
+- Newest [Angular 8](https://angular.io/) 
+  - Going beyond typical use cases of [Angular Elements](https://angular.io/guide/elements)
+  - Envelope and all micro applications compatible with [Lazy Loading Feature Modules](https://angular.io/guide/lazy-loading-ngmodules)
+  - Extending Angular CLI with [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-- [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
 
 ---
 #### Setup / Usage / How to
