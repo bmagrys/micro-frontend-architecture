@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "start:prod": "ng serve --aot --prod=true --vendor-chunk=false --optimization=true",
+    "build": "ng build --prod",
+    "server": "http-server dist -p 8200",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
