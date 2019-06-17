@@ -8,6 +8,7 @@ Fully functional Angular app acting as a shell for micro apps
 
 - [Angular](https://angular.io/) with use of [Angular Elements](https://angular.io/guide/elements)
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+- [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
 
 Current status:
 - :heavy_check_mark: Angular 8
