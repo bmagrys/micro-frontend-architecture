@@ -10,10 +10,10 @@ The business case used as an example here is Administration Panel for an E-comme
 
 Example consists of following projects:
 - Envelope `/micro-frontend-envelope`: Starting application with layout and main navigation, 
-acting as Envelope for other apps. That's entry layer for every nested content in panel,
+acting as Envelope for other apps. That's entry layer for every nested content in panel [(read more)](./micro-frontend-envelope/README.md),
 - Orders `/micro-frontend-app-orders`: Demo micro application which acts as Orders section
-  - Micro-app model where bundles can be hosted separately and referenced at runtime in Envelope app 
-- (more coming soon) 
+  - Micro-app model where bundles can be hosted separately and referenced at runtime in Envelope app [(read more)](./micro-frontend-app-orders/README.md),
+- (more coming soon)
 
 ---
 #### Assumptions
