@@ -1,6 +1,8 @@
 Micro-app frontend architecture examples and templates of various approaches
 ============================================================================
 
+[![Join the chat at https://gitter.im/micro-frontend-architecture/community](https://badges.gitter.im/micro-frontend-architecture/community.svg)](https://gitter.im/micro-frontend-architecture/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 At this moment, this example consists of a few Angular projects demonstrating
 an implementation of a main application called Envelope and micro applications
 that can be attached not only at the build time (micro application as a _feature library_),
