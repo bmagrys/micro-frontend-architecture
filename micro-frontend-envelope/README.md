@@ -12,7 +12,8 @@ Fully functional Angular app acting as a shell for micro apps
 Current status:
 - :heavy_check_mark: Angular 8
 - :heavy_check_mark: Lazy loading
-- :heavy_check_mark: Ivy support
+- :heavy_check_mark: External bundles loaded once at startup, lightweight micro apps
+- :x: Ivy support (https://github.com/angular/angular/issues/30262#issuecomment-497101996)
 - :x: Angular router fully working
 
 ---
