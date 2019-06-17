@@ -9,6 +9,23 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+<script src="./assets/zone.js/zone.js"></script>
+
+<!-- Polyfills for Browsers supporting Custom Elements. Needed b/c we downlevel to ES5.
+     See: @webcomponents/custom-elements -->
+<script src="./assets/custom-elements/src/native-shim.js"></script>
+<!-- Polyfills for Browsers not supporting Custom Elements. See: @webcomponents/custom-elements -->
+<script src="./assets/custom-elements/custom-elements.min.js"></script>
+
+<script src="./assets/rxjs/rxjs.umd.js"></script>
+<script src="./assets/core/bundles/core.umd.js"></script>
+<script>ng.core.enableProdMode();</script> <!-- Can be called only once for all micro applications! -->
+
+<script src="./assets/common/bundles/common.umd.js"></script>
+<script src="./assets/platform-browser/bundles/platform-browser.umd.js"></script>
+<script src="./assets/elements/bundles/elements.umd.js"></script>
+<script src="./assets/router/bundles/router.umd.js"></script>
+
+<app-root></app-root>
 </body>
 </html>

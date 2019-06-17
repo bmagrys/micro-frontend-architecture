@@ -1,0 +1,17 @@
+# @webcomponent
+/custom-elements
+
+# @angular
+/animations
+/common
+/compiler
+/core
+/elements
+/forms
+/language-service
+/platform-browser
+/platform-browser-dynamic
+/router
+
+/rxjs
+/zone.js

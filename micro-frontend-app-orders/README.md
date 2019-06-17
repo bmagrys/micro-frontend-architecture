@@ -15,7 +15,37 @@ Can be hosted separately and referenced at runtime in Envelope app.
 Current status:
 - :heavy_check_mark: Angular 8
 - :heavy_check_mark: Lazy loading
-- :heavy_check_mark: Ivy support
+- :heavy_check_mark: Lightweight bundles, size of micro app reduced to minimum
+
+<details>
+  <summary>Details</summary>
+  
+    Date: 2019-06-17T17:43:28.547Z
+    Hash: 0cbd6d10ab88118ad039
+    Time: 6103ms
+    chunk {0} main-es5.js (main) 9.22 kB [entry] [rendered]
+    chunk {1} 1-es5.js () 3.48 kB  [rendered]
+    chunk {2} 2-es5.js () 2.37 kB  [rendered]
+    chunk {3} 3-es5.js () 4.29 kB  [rendered]
+    chunk {4} 4-es5.js () 4.29 kB  [rendered]
+    chunk {5} 5-es5.js () 1.91 kB  [rendered]
+    chunk {scripts} scripts.js (scripts) 13.3 kB [entry] [rendered]
+                                                                                   
+    Date: 2019-06-17T17:43:32.376Z
+    Hash: bd37670c2c0d70a4f024
+    Time: 3803ms
+    chunk {0} main-es2015.js (main) 9.11 kB [entry] [rendered]
+    chunk {1} 1-es2015.js () 3.4 kB  [rendered]
+    chunk {2} 2-es2015.js () 2.29 kB  [rendered]
+    chunk {3} 3-es2015.js () 4.16 kB  [rendered]
+    chunk {4} 4-es2015.js () 4.15 kB  [rendered]
+    chunk {5} 5-es2015.js () 1.77 kB  [rendered]
+    chunk {scripts} scripts.js (scripts) 13.3 kB [entry] [rendered]
+
+![image](bundles-load.png)
+</details>
+
+- :x: Ivy compiler [[currently not supported]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
 - :x: Angular router fully working
 
 ---
@@ -33,7 +63,6 @@ Current status:
 
 - Can be sometimes too coupled to Web Component / Angular Elements specifics,
 - Boilerplate in every app to handle architecture,
-- Bundle sizes are not that small,
 - Angular Router is not designed for such cases and requires workarounds,
 - Requires maintenance of additional Envelope app and shared services, guards etc.
   which is sometimes barely related to business cases, can be time-consuming
@@ -59,7 +88,7 @@ Use `npm run build:gateway-model` if you are using some kind of gateway also
 for frontend assets and relative request path contexts are redirected 
 deep into the infrastructure.
 
-###### Serve production build statics (not production ready)
+###### Serve production build statics
 
 Run `npm run server`
 

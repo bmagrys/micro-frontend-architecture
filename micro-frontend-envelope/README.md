@@ -8,11 +8,13 @@ Fully functional Angular app acting as a shell for micro apps
 
 - [Angular](https://angular.io/) with use of [Angular Elements](https://angular.io/guide/elements)
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+- [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
 
 Current status:
 - :heavy_check_mark: Angular 8
 - :heavy_check_mark: Lazy loading
-- :heavy_check_mark: Ivy support
+- :heavy_check_mark: External bundles loaded once at startup, lightweight micro apps
+- :x: Ivy compiler [[currently not supported]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
 - :x: Angular router fully working
 
 ---
@@ -26,10 +28,10 @@ You can also test production setup running `npm run start:prod`
 
 ###### Build
 
-Run `npm run build` to build the project.
+Run `npm run bundle` to copy needed assets and build the project.
 The build artifacts will be stored in the `dist/` directory.
 
-###### Serve production build statics (not production ready)
+###### Serve production build statics
 
 Run `npm run server`
 

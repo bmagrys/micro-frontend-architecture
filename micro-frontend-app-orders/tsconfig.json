@@ -1,7 +1,4 @@
 {
-  "angularCompilerOptions": {
-    "enableIvy": true
-  },
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
