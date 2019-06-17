@@ -9,8 +9,7 @@ but above all, <ins>dynamically at runtime</ins> (external sources eg. CDN, dedi
 The business case used as an example here is Administration Panel for an E-commerce system.
 
 Example consists of following projects:
-- Envelope `/micro-frontend-envelope`: Starting application with layout and main navigation, 
-acting as Envelope for other apps. That's entry layer for every nested content in panel [(read more)](./micro-frontend-envelope/README.md),
+- Envelope `/micro-frontend-envelope`: Starting application with layout and main navigation that aggregates other apps. That's entry layer for every nested content in panel [(read more)](./micro-frontend-envelope/README.md),
 - Orders `/micro-frontend-app-orders`: Demo micro application which acts as Orders section
   - Micro-app model where bundles can be hosted separately and referenced at runtime in Envelope app [(read more)](./micro-frontend-app-orders/README.md),
 - (more coming soon)
