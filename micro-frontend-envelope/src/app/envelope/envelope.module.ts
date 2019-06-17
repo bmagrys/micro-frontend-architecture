@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MicroAppComponent } from './component/micro-app/micro-app.component';
+import { NavComponent } from './component/nav/nav.component';
 
-import {EnvelopeRoutingModule} from './envelope-routing.module';
-import {EnvelopeComponent} from './envelope.component';
-import {NavComponent} from "./component/nav/nav.component";
-import {MicroAppComponent} from "./component/micro-app/micro-app.component";
+import { EnvelopeRoutingModule } from './envelope-routing.module';
+import { EnvelopeComponent } from './envelope.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,8 @@ import {MicroAppComponent} from "./component/micro-app/micro-app.component";
   ],
   imports: [
     CommonModule,
-    EnvelopeRoutingModule
-  ]
+    EnvelopeRoutingModule,
+  ],
 })
 export class EnvelopeModule {
 }

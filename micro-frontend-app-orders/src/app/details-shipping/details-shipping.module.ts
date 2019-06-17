@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { DetailsShippingRoutingModule } from './details-shipping-routing.module';
 import { DetailsShippingComponent } from './details-shipping.component';
@@ -8,7 +8,8 @@ import { DetailsShippingComponent } from './details-shipping.component';
   declarations: [DetailsShippingComponent],
   imports: [
     CommonModule,
-    DetailsShippingRoutingModule
-  ]
+    DetailsShippingRoutingModule,
+  ],
 })
-export class DetailsShippingModule { }
+export class DetailsShippingModule {
+}
