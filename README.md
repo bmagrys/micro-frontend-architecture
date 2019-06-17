@@ -13,6 +13,7 @@ Example consists of following projects:
 acting as Envelope for other apps. That's entry layer for every nested content in panel,
 - Orders `/micro-frontend-app-orders`: Demo micro application which acts as Orders section
   - Micro-app model where bundles can be hosted separately and referenced at runtime in Envelope app 
+- (more coming soon) 
 
 ---
 #### Assumptions

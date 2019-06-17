@@ -1,17 +1,17 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {DoBootstrap, Injector, NgModule} from '@angular/core';
-import {createCustomElement} from '@angular/elements';
+import { DoBootstrap, Injector, NgModule } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -22,7 +22,7 @@ export class AppModule implements DoBootstrap {
   }
 
   public ngDoBootstrap() {
-    const myElement = createCustomElement(AppComponent, {injector: this.injector});
-    customElements.define('micro-frontend-app-orders-root', myElement);
+    const myElement = createCustomElement(AppComponent, { injector: this.injector });
+    customElements.define('app-micro-frontend-orders-root', myElement);
   }
 }

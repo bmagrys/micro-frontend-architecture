@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {OrderListElementModel} from "./models/order-list-element.model";
-import {OrderListService} from "./services/order-list.service";
+import { Component, OnInit } from '@angular/core';
+import { OrderListElementModel } from './models/order-list-element.model';
+import { OrderListService } from './services/order-list.service';
 
 @Component({
   selector: 'app-order-list',
   templateUrl: './order-list.component.html',
-  styleUrls: ['./order-list.component.scss']
+  styleUrls: ['./order-list.component.scss'],
 })
 export class OrderListComponent implements OnInit {
 
