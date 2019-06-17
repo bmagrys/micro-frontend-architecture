@@ -88,7 +88,7 @@ Use `npm run build:gateway-model` if you are using some kind of gateway also
 for frontend assets and relative request path contexts are redirected 
 deep into the infrastructure.
 
-###### Serve production build statics (not production ready)
+###### Serve production build statics
 
 Run `npm run server`
 

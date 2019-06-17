@@ -82,6 +82,6 @@ To run all together:
     Production:
     
     ```
-    npm run build
+    npm run bundle
     npm run server 
     ```
