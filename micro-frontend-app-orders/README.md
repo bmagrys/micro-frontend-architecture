@@ -86,8 +86,8 @@ You can also test production setup running `npm run start:prod`
 
 Run `npm run build` to build the project.
 The build artifacts will be stored in the `dist/` directory.
-Use `npm run build:gateway-model` if you are using some kind of gateway also 
-for frontend assets and relative request path contexts are redirected 
+Use `npm run build:gateway-model` if you are hosting micro app only at different context (not domain)
+or if are using some kind of gateway also for frontend assets and relative request path contexts are redirected 
 deep into the infrastructure.
 
 ###### Serve production build statics
