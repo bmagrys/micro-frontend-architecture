@@ -16,7 +16,6 @@ Example consists of following projects:
   - Micro-app model where bundles can be hosted separately and referenced at runtime in Envelope app [(read more)](./micro-frontend-app-orders/README.md),
 - (more coming soon)
 
-Current showcase:
 ![](showcase.gif)
 
 ---
