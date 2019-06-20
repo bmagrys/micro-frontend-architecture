@@ -14,8 +14,8 @@ Current status:
 - :heavy_check_mark: Angular 8
 - :heavy_check_mark: Lazy loading
 - :heavy_check_mark: External bundles loaded once at startup, lightweight micro apps
-- :x: Ivy compiler [[currently not supported]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
-- :x: Angular router fully working
+- :heavy_check_mark: Angular router fully working (:grey_exclamation: with additional boilerplate in other micro apps)
+- :x: Ivy compiler [[not supported yet]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
 
 ---
 #### Setup / Usage / How to
