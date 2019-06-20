@@ -4,9 +4,13 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class NavigationService {
-  public lastSuccessfulNavigationUrl: string;
+  private lastSuccessfulNavigationUrl: string;
 
-  public publishLastSuccessfulNavigationUrl(url: string): void {
+  public setLastSuccessfulNavigationUrl(url: string): void {
     this.lastSuccessfulNavigationUrl = url;
+  }
+
+  public getLastSuccessfulNavigationUrl() {
+    return this.lastSuccessfulNavigationUrl;
   }
 }

@@ -29,8 +29,8 @@ export class AppModule implements DoBootstrap {
         // Catch only micro app routes
         if (event.url.startsWith(`/${ environment.APP_URL }`)) {
           // Uncomment to see tracing
-          // console.log('[Orders] publishLastSuccessfulNavigationUrl', event.url);
-          this.navigationService.publishLastSuccessfulNavigationUrl(event.url);
+          // console.log('[Orders] setLastSuccessfulNavigationUrl', event.url);
+          this.navigationService.setLastSuccessfulNavigationUrl(event.url);
         }
       }
     });
