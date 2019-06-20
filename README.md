@@ -1,4 +1,4 @@
-Micro-app frontend architecture examples and templates of various approaches
+Micro-app frontend architecture (experimental) examples and templates of various approaches
 ============================================================================
 
 [![Join the chat at https://gitter.im/micro-frontend-architecture/community](https://badges.gitter.im/micro-frontend-architecture/community.svg)](https://gitter.im/micro-frontend-architecture/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -6,7 +6,7 @@ Micro-app frontend architecture examples and templates of various approaches
 At this moment, this example consists of a few Angular projects demonstrating
 an implementation of a main application called Envelope and micro applications
 that can be attached not only at the build time (micro application as a _feature library_),
-but above all, <ins>dynamically at runtime</ins> (external sources eg. CDN, dedicated gateway).
+but above all, <ins>dynamically at runtime</ins> (from external sources eg. CDN, dedicated gateway).
 
 The business case used as an example here is Administration Panel for an E-commerce system.
 
@@ -15,6 +15,9 @@ Example consists of following projects:
 - Orders `/micro-frontend-app-orders`: Demo micro application which acts as Orders section
   - Micro-app model where bundles can be hosted separately and referenced at runtime in Envelope app [(read more)](./micro-frontend-app-orders/README.md),
 - (more coming soon)
+
+Current showcase:
+![](showcase.gif)
 
 ---
 #### Assumptions
@@ -46,7 +49,8 @@ They are listed in concrete projects.
 - Newest [Angular 8](https://angular.io/)
   - Going beyond typical use cases of [Angular Elements](https://angular.io/guide/elements)
   - Envelope and all micro applications compatible with [Lazy Loading Feature Modules](https://angular.io/guide/lazy-loading-ngmodules)
-  - Extending Angular CLI with [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
+    and [Angular Routing & Navigation](https://angular.io/guide/router)
+  - Extended Angular CLI possibilities without ejecting thanks to [ngx-build-plus](https://github.com/manfredsteyer/ngx-build-plus)
 - [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
 ---

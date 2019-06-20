@@ -1,14 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-envelope',
   templateUrl: './envelope.component.html',
 })
-export class EnvelopeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class EnvelopeComponent {
 }

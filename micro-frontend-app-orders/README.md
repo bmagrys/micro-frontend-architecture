@@ -45,25 +45,27 @@ Current status:
 ![image](bundles-load.png)
 </details>
 
-- :x: Ivy compiler [[currently not supported]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
-- :x: Angular router fully working
+- :heavy_check_mark: Angular router fully working (:grey_exclamation: with additional boilerplate)
+- :x: Ivy compiler [[not supported yet]](https://github.com/angular/angular/issues/30262#issuecomment-497101996)
 
 ---
 #### Pros:
 
 - Tiny, small projects where business cases / domains are separated
 (let's say, some kind of microservices on frontend)
-- Fast, independent builds and feature delivery, deployment per micro application,
+- Fast, independent builds and feature delivery
+- Blazing fast deployment of micro applications,
 - Much less conflicts comparing to one monolith app developed by multiple teams,
 - Content not loaded, until used (lazy loading of micro applications / components,
   regardless of the technologies used inside),
-- Easier to maintain, move to another project, rewrite, delete from the whole system.
+- Easier to remove from the entire system, easier to transfer to another,
+- Complexity of whole frontend project scales more horizontally instead of vertically 
 
 #### Cons:
 
 - Can be sometimes too coupled to Web Component / Angular Elements specifics,
-- Boilerplate in every app to handle architecture,
-- Angular Router is not designed for such cases and requires workarounds,
+- Boilerplate in every app to handle architecture and navigation
+  (Angular Router is not ready for that case out of the box)
 - Requires maintenance of additional Envelope app and shared services, guards etc.
   which is sometimes barely related to business cases, can be time-consuming
   and hard to debug,
@@ -103,5 +105,4 @@ Run `npm run e2e` to execute the end-to-end tests via [Protractor](http://www.pr
 ---
 #### Areas for improvements
 
-- Angular routing: some global actions (_back_ and _forward_ action behaviour) 
-are being caught by all Angular micro-apps currently run in single web page
+- The less boilerplate and coupled to WC code the better

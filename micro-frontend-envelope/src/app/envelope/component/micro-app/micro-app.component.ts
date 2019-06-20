@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <div id="micro-app-web-component">There should render micro-app!</div>`,
 })
 export class MicroAppComponent implements OnInit {
-  private CUSTOM_ELEMENT_CONTAINER_ID = 'micro-app-web-component';
+  private readonly CUSTOM_ELEMENT_CONTAINER_ID = 'micro-app-web-component';
+
   private appSelector = 'app-micro-frontend-orders-root';
   private appUrlPrefix = 'http://localhost:8201/micro-frontend-app-orders';
 
@@ -21,7 +22,7 @@ export class MicroAppComponent implements OnInit {
       this.loadScripts(content, this.appUrlPrefix);
     } else {
       // tslint:disable-next-line:no-console
-      console.debug('Web Component {} already loaded', this.appSelector);
+      console.debug(`Web Component ${ this.appSelector } already loaded!`);
     }
 
     const element: HTMLElement = document.createElement(this.appSelector);
