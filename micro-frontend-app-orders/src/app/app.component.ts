@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private readonly router: Router,
               private readonly location: Location,
               private readonly navigationService: NavigationService) {
-    this.previousUrl = this.navigationService.lastSuccessfulNavigationUrl;
+    this.previousUrl = this.navigationService.getLastSuccessfulNavigationUrl();
   }
 
   public ngOnInit(): void {
