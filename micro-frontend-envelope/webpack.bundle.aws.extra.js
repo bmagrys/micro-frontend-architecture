@@ -3,7 +3,7 @@ const webpack = require('webpack');
 module.exports = {
   plugins: [
     new webpack.DefinePlugin({
-      'SOURCES_URL_PREFIX': JSON.stringify('http://localhost:8201')
+      'SOURCES_URL_PREFIX': JSON.stringify('.')
     })
   ],
   output: {
