@@ -6,7 +6,7 @@
     "start": "ng serve --port 4201",
     "start:prod": "ng serve --port 4201 --aot --prod=true --vendor-chunk=false --optimization=true",
     "build": "ng build --prod --extraWebpackConfig webpack.extra.js --single-bundle true --deploy-url http://localhost:8201/micro-frontend-app-orders/",
-    "build:gateway-model": "ng build --prod --extraWebpackConfig webpack.extra.js --single-bundle true --deploy-url micro-frontend-app-orders/",
+    "build:aws": "ng build --prod --extraWebpackConfig webpack.extra.js --single-bundle true --deploy-url micro-frontend-app-orders/",
     "server": "http-server dist -p 8201 --cors http://localhost:4200",
     "test": "ng test",
     "lint": "ng lint",

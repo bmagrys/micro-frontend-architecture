@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
+// Provided at build time, depends if you load micro apps
+// from relative context or directly from other domain / port
+declare const SOURCES_URL_PREFIX: string;
+
 @Component({
   selector: 'app-envelope-micro-app',
-  template: `
-    <div id="micro-app-web-component">There should render micro-app!</div>`,
+  template: `<div id="micro-app-web-component">There should render micro-app!</div>`,
 })
 export class MicroAppComponent implements OnInit {
   private readonly CUSTOM_ELEMENT_CONTAINER_ID = 'micro-app-web-component';
 
   private appSelector = 'app-micro-frontend-orders-root';
-  private appUrlPrefix = 'http://localhost:8201/micro-frontend-app-orders';
-
-  constructor() {
-  }
+  private appUrlPrefix = `${ SOURCES_URL_PREFIX }/micro-frontend-app-orders`;
 
   public ngOnInit() {
     const content = document.getElementById(this.CUSTOM_ELEMENT_CONTAINER_ID);

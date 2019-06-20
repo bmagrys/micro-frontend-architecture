@@ -52,20 +52,21 @@ Current status:
 #### Pros:
 
 - Tiny, small projects where business cases / domains are separated
-(let's say, some kind of microservices on frontend)
+(let's say, some kind of microservices on frontend),
 - Fast, independent builds and feature delivery
-- Blazing fast deployment of micro applications,
+- Blazing fast deployment of micro application,
 - Much less conflicts comparing to one monolith app developed by multiple teams,
 - Content not loaded, until used (lazy loading of micro applications / components,
   regardless of the technologies used inside),
 - Easier to remove from the entire system, easier to transfer to another,
-- Complexity of whole frontend project scales more horizontally instead of vertically 
+- Complexity of whole frontend project scales more horizontally instead of vertically, 
+- Angular is not an only option.
 
 #### Cons:
 
 - Can be sometimes too coupled to Web Component / Angular Elements specifics,
 - Boilerplate in every app to handle architecture and navigation
-  (Angular Router is not ready for that case out of the box)
+  (Angular Router is not ready for that case out of the box),
 - Requires maintenance of additional Envelope app and shared services, guards etc.
   which is sometimes barely related to business cases, can be time-consuming
   and hard to debug,
@@ -86,8 +87,8 @@ You can also test production setup running `npm run start:prod`
 
 Run `npm run build` to build the project.
 The build artifacts will be stored in the `dist/` directory.
-Use `npm run build:gateway-model` if you are hosting micro app only at different context (not domain)
-or if are using some kind of gateway also for frontend assets and relative request path contexts are redirected 
+Use `npm run build:aws` if you are hosting micro app just at different context (not domain)
+or if are using some kind of gateway also for frontend assets and relative request path contexts are forwarded 
 deep into the infrastructure.
 
 ###### Serve production build statics
