@@ -21,12 +21,15 @@ Example consists of following projects:
 ---
 #### Assumptions
 
-The quality of the micro application code shouldn't be drastically reduced
+- **No coupling with external frameworks and libraries dedicated
+to micro-frontend architecture**,
+- The quality of the micro application code shouldn't be drastically reduced
 due to the adaptation to the technology used to attach micro applications to
-the envelope application. Micro applications can't be (very) toughly coupled
-to the technologies used only for attaching them to envelope. They should be
-easy to rewrite to a traditional model in case of problems with architecture. 
-Developing such apps shouldn't be a one-way ticket.
+the envelope application. 
+- Micro applications can't be (very) toughly coupled to the technologies used
+only for attaching them to envelope. They should be easy to rewrite
+to a traditional model in case of problems with architecture. Developing such
+apps shouldn't be a one-way ticket.
 
 ---
 #### Potential use cases / Pros / Cons
